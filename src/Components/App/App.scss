@@ -1,0 +1,71 @@
+.App {
+    min-height: 100vh;
+    position: relative;
+    color: #333;
+    .hero {
+        min-height: 35vh;
+        display: flex;
+        align-items: center;
+        background-color: #e2dcd5;
+        h1 {
+            margin: 0 auto;
+        }
+    }
+    .options {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        margin-top: 25px;
+    }
+}
+.total {
+    background-color: #e2dcd5;
+    padding: 15px 30px;
+    position: fixed;
+    bottom:0;
+    text-align: right;
+    width: 100%;
+    span {
+        margin-right: 70px;
+    }
+}
+
+.addons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    h3 {
+        width: 100%;
+    }
+    .addonWrapper {
+        width: 100%;
+    }
+    .button {
+        text-decoration: none;
+        color:#333;
+        background-color: #e2dcd5;
+        margin-top: 10px;
+        display: inline-block;
+        border-radius: 5px;
+        text-transform: capitalize;
+        transition: ease background-color .3s;
+        cursor: pointer;
+        &:hover {
+            background-color: darken(#e2dcd5, 30%);
+        }
+        span {
+            padding:5px 10px;
+            display: inline-block;
+        }
+        .name {width:200px;}
+        .price {
+            background-color: darken(#e2dcd5, 30%);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
