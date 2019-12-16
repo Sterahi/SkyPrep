@@ -83,7 +83,7 @@ export default class App extends React.Component {
                         </span>
                     </div>
                     {this.state.addonTotal >=8000 &&
-                        <div>Congratulations! You qualify for a special discount. We&#39;ve capped your addon cost to 8,000</div>
+                        <div className = "grats">Congratulations! You qualify for a special discount. We&#39;ve capped your addon cost to 8,000</div>
                     }
                     <div className = "addons">
                         <h3>Addons</h3>
